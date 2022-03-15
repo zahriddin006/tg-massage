@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: #e5e5e5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  width: 400px;
+  height: 514px;
+}
+
+.name-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(106, 150, 216, 1);
+  padding: 20px 25px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.name{
+  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  font-variant: small-caps;
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+
+.name::before{
+  content: ". ";
+  position: absolute;
+  bottom: 7px;
+  margin-left: -15px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.date{
+  padding-top: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  font-variant: small-caps;
+  color: #ddd;
+}
+
+.line{
+  position: relative;
+  bottom: 2px;
+  display: inline-block;
+  width: 145px;
+  height: 0;
+  border: 1px solid #DDDDDD;
+}
+.clock{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #DDDDDD;
+  margin-left: 24px;
+}
+
+.clock-right{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #DDDDDD;
+  margin-right: 24px;
+  float: right;
+  margin-bottom: 6px;
+}
+
+.left-massage{
+  position: relative;
+  width: 275px;
+  height: 56px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  background-color: #E6EDF6;
+  border-radius: 1px;
+  margin-left: 24px;
+  padding: 9px 63px 11px 15px;
+  margin-bottom: 16px;
+}
+
+.left-massage-but{
+  position: relative;
+  width: 90px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  background-color: #E6EDF6;
+  border-radius: 1px;
+  margin-left: 24px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.right-massage{
+  position: relative;
+  float: right;
+  width: 275px;
+  height: 56px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  background-color: #E6EDF6;
+  border-radius: 1px;
+  margin-right: 24px;
+  padding: 9px 17px 11px 10px;
+  margin-bottom: 6px;
+}
+
+.left-massage::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  @include triangle-up( 10px, #E6EDF6)
+}
+
+.right-massage::before{
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  @include triangle-up( 10px, #E6EDF6)
+}
+
+.spam{
+  float: right;
+  width: 193px;
+  height: 38px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  background: #FFC2C1;
+  border-radius: 1px;
+  padding: 10px;
+  margin-right: 24px;
+  margin-bottom: 30px;
+}
+
+.clr{
+  clear: both;
+}
+
+.poster{
+  position: relative;
+}
+
+.massage{
+  width: 352px;
+  height: 45px;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 54px;
+  padding: 13px 20px;
+  margin-left: 24px;
+}
+
+.send-btn{
+  position: absolute;
+  right: 28px;
+  top: 4px;
+  background: #6A96D8;
+  border-radius: 100px;
+  padding: 9px 26px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  border: none;
+}
