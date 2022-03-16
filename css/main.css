@@ -17,7 +17,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  background-color: #e5e5e5;
+  font-weight: bold;
+  background-color: #B2C7DA;
 }
 
 li {
@@ -44,9 +45,7 @@ a {
 
 .card {
   background-color: #fff;
-  border-radius: 14px;
   width: 400px;
-  height: 514px;
 }
 
 .name-btn {
@@ -62,8 +61,6 @@ a {
   width: 100%;
   background-color: #6a96d8;
   padding: 20px 25px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
 }
 
 .name {
@@ -191,7 +188,7 @@ a {
   line-height: 18px;
   letter-spacing: -0.03em;
   color: #000000;
-  background-color: #E6EDF6;
+  background-color: #F2F2F2;
   border-radius: 1px;
   margin-right: 24px;
   padding: 9px 17px 11px 10px;
@@ -213,13 +210,13 @@ a {
 .right-massage::before {
   content: "";
   position: absolute;
-  right: -10px;
+  right: -9px;
   top: 0;
   width: 0;
   height: 0;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
-  border-top: 10px solid #E6EDF6;
+  border-top: 10px solid #F2F2F2;
 }
 
 .left-massage-but::before {
@@ -249,7 +246,7 @@ a {
   border-radius: 1px;
   padding: 10px;
   margin-right: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .clr {
@@ -266,10 +263,11 @@ a {
   border: 1px solid #DDDDDD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 54px;
-  padding: 13px 20px;
   margin-left: 24px;
+  padding: 20px 0;
   outline: none;
+  border: none;
+  border-top: 1px solid #ddd;
 }
 
 .send-btn {
