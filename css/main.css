@@ -222,6 +222,18 @@ a {
   border-top: 10px solid #E6EDF6;
 }
 
+.left-massage-but::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #E6EDF6;
+}
+
 .spam {
   float: right;
   width: 193px;
@@ -257,6 +269,7 @@ a {
   border-radius: 54px;
   padding: 13px 20px;
   margin-left: 24px;
+  outline: none;
 }
 
 .send-btn {
