@@ -91,6 +91,12 @@ a {
   background-color: transparent;
   border: none;
   outline: none;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .date {
@@ -257,16 +263,17 @@ a {
   position: absolute;
   right: 28px;
   top: 4px;
-  background: #6A96D8;
+  background-color: #fff;
   border-radius: 100px;
   padding: 9px 26px;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: #6A96D8;
   border: none;
+  cursor: pointer;
 }
